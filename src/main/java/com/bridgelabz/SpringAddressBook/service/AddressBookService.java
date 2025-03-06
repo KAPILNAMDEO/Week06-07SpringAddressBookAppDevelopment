@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @Service
 public class AddressBookService {
-
+/*
     private final List<AddressBook> addressBookList = new ArrayList<>();
     private final AtomicLong idCounter = new AtomicLong(1);  // Manual ID generation
 
@@ -59,7 +59,9 @@ public class AddressBookService {
     public void deleteEntry(Long id) {
         addressBookList.removeIf(entry -> entry.getId().equals(id));
     }
-/*
+
+ */
+
     @Autowired
     private AddressBookRepository repository;
 
@@ -100,5 +102,5 @@ public class AddressBookService {
         repository.deleteById(id);
     }
 
- */
+
 }

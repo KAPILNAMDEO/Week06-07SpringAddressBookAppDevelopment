@@ -6,11 +6,9 @@ import { UserListComponent } from './user-list/user-list.component'; // Adjust t
 @Component({
   selector: 'app-root',
   standalone: true, // Mark AppComponent as standalone
-  imports: [RouterOutlet,CommonModule, UserListComponent], // Ensure it's an array
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  imports: [CommonModule, UserListComponent], // Ensure it's an array
+  template: `<app-user-list></app-user-list>`, // ✅ Use it in the template
 })
 export class AppComponent {
-  title = 'your-app';
 }
 
